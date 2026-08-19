@@ -79,3 +79,15 @@ https://ahotoso.com/request-received/
 6. Rebuild the site and submit a test request before launch.
 
 Until an endpoint is configured, the form deliberately blocks submission and shows a clear message instead of losing client data silently. Each request receives a browser-generated reference such as `WEB-20260819-ABC123`, plus source and submission timestamp metadata.
+
+## Contact configuration
+
+Business contact details are centralised in `_config.yml` under `contact:`.
+
+- `email` is the public general enquiries mailbox.
+- Additional mailboxes are reserved for support, projects, property and accounts.
+- `whatsapp_number` should use international digits only (for example `233XXXXXXXXX`).
+- Leave `whatsapp_number` blank until the business number is ready to publish; the site will not show a fake or placeholder WhatsApp link.
+- `whatsapp_message` controls the prefilled message used by WhatsApp links.
+
+After changing `_config.yml`, restart the local Jekyll server so the configuration is reloaded.

@@ -25,3 +25,16 @@ include:
 # creating the Ahotosoɔ service-request form (for example: https://formspree.io/f/xxxxxx).
 forms:
   service_request_endpoint: ""
+
+# Central contact configuration. Keep client-facing contact details here so
+# pages do not need to be edited when a number or mailbox changes.
+contact:
+  email: "hello@ahotoso.com"
+  support_email: "support@ahotoso.com"
+  projects_email: "projects@ahotoso.com"
+  property_email: "property@ahotoso.com"
+  accounts_email: "accounts@ahotoso.com"
+  # Add the business WhatsApp number in international format using digits only,
+  # for example 233XXXXXXXXX. Leave blank until the number is ready to publish.
+  whatsapp_number: ""
+  whatsapp_message: "Hello Ahotosoɔ. I would like help with a property or project in Ghana."
