@@ -1,0 +1,15 @@
+main:
+  - title: "Services"
+    url: /services/
+  - title: "How It Works"
+    url: /how-it-works/
+  - title: "Pricing"
+    url: /pricing/
+  - title: "Why Ahotosoɔ"
+    url: /why-ahotoso/
+  - title: "About"
+    url: /about/
+  - title: "Resources"
+    url: /resources/
+  - title: "Contact"
+    url: /contact/

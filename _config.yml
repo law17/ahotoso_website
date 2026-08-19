@@ -1,0 +1,27 @@
+title: "Ahotosoɔ"
+name: "Ahotosoɔ Services Ltd"
+description: "Your trusted presence in Ghana. Independent verification, property oversight, construction monitoring and local representation for people living abroad."
+url: "https://ahotoso.com"
+baseurl: ""
+locale: "en-GB"
+timezone: "Europe/London"
+markdown: kramdown
+permalink: pretty
+sass:
+  sass_dir: assets/css
+  style: compressed
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+include:
+  - _pages
+# Service-request delivery. Paste the unique Formspree form endpoint here after
+# creating the Ahotosoɔ service-request form (for example: https://formspree.io/f/xxxxxx).
+forms:
+  service_request_endpoint: ""

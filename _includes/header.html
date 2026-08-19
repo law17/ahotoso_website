@@ -1,0 +1,17 @@
+<header class="site-header" id="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Ahotosoɔ home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+      <span class="brand-copy"><strong>AHOTOSOƆ</strong><small>Services Ltd</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      {% for link in site.data.navigation.main %}
+      <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+      <a class="button button-small button-solid" href="{{ '/request-a-service/' | relative_url }}">Request a Service</a>
+    </nav>
+  </div>
+</header>
