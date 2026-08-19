@@ -100,3 +100,23 @@ The repository includes a GitHub Actions workflow at `.github/workflows/pages.ym
 - `docs/GO-LIVE-CHECKLIST.md`
 
 The custom domain is intentionally **not** activated in the repository yet. Keep the site on its GitHub Pages URL until `ahotoso.com` is under the company's control and DNS/HTTPS are ready.
+
+## Local preview and GitHub Pages staging
+
+The default `_config.yml` is configured for the GitHub Pages staging URL:
+
+`https://law17.github.io/ahotoso_website/`
+
+For the normal local preview at `http://127.0.0.1:4000/`, run:
+
+```bash
+./serve-local.sh
+```
+
+Equivalent command:
+
+```bash
+bundle exec jekyll serve --livereload --config _config.yml,_config.local.yml
+```
+
+When `ahotoso.com` is connected later, change the production URL to `https://ahotoso.com` and set `baseurl: ""`. No page templates or navigation links need to be rewritten.

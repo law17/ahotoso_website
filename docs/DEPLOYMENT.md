@@ -39,10 +39,16 @@ Every push to `main` triggers a deployment. Pull requests do not deploy the prod
 
 ## 3. Local development
 
-Continue using the existing local workflow:
+The default configuration is intentionally set for the GitHub Pages staging path. For the normal local preview at the site root, use:
 
 ```bash
-bundle exec jekyll serve --livereload
+./serve-local.sh
+```
+
+Equivalent command:
+
+```bash
+bundle exec jekyll serve --livereload --config _config.yml,_config.local.yml
 ```
 
 Then open:
@@ -51,16 +57,31 @@ Then open:
 http://127.0.0.1:4000
 ```
 
+If you run the plain `bundle exec jekyll serve --livereload` command instead, Jekyll will honour the staging `baseurl`, so the local site will be under `/ahotoso_website/`.
+
 Normal HTML, Markdown, CSS, JavaScript and content edits do not require `bundle install` again unless the Gemfile or lockfile changes.
 
-## 4. Custom domain later
+## 4. GitHub Pages staging
 
-The site configuration already uses the intended production URL:
+The current deployment configuration is:
+
+```yaml
+url: "https://law17.github.io"
+baseurl: "/ahotoso_website"
+```
+
+This ensures Jekyll's `relative_url` filter generates links such as `/ahotoso_website/services/` instead of incorrectly pointing to `/services/` at the account root.
+
+## 5. Custom domain later
+
+When `ahotoso.com` is ready, change the configuration to:
 
 ```yaml
 url: "https://ahotoso.com"
 baseurl: ""
 ```
+
+No header, footer, page, navigation, CSS or JavaScript paths need to be rewritten because the site templates already use Jekyll's `relative_url` filter.
 
 Do not add a `CNAME` file or change DNS until the domain is actually under Ahotosoɔ's control and we are ready to publish it.
 
@@ -74,13 +95,13 @@ When the domain is ready:
 
 DNS values should be taken from GitHub's current Pages documentation at the time of go-live rather than copied permanently into this repository, because hosting guidance can change.
 
-## 5. Domain and email are separate
+## 6. Domain and email are separate
 
 Website hosting and business email should be configured independently. DNS records for email (MX, SPF, DKIM and DMARC) must not be overwritten when the website's Pages records are added.
 
 Before changing DNS, export or record all existing DNS entries.
 
-## 6. Production safety
+## 7. Production safety
 
 Before a public launch:
 
@@ -94,7 +115,7 @@ Before a public launch:
 - submit one end-to-end test enquiry;
 - verify analytics only after deciding on the privacy approach.
 
-## 7. Rollback
+## 8. Rollback
 
 Because the site is version-controlled, a bad deployment can be reversed by reverting the relevant commit and pushing `main` again:
 

@@ -1,0 +1,25 @@
+Ahotosoɔ GitHub Pages staging fix
+
+What changed:
+- _config.yml now uses:
+    url: "https://law17.github.io"
+    baseurl: "/ahotoso_website"
+- _config.local.yml added for root-level localhost preview.
+- serve-local.sh added for simple local preview.
+- Deployment documentation updated.
+
+What did NOT change:
+- homepage design/content
+- header/footer layout
+- navigation structure
+- colours/typography
+- CSS/JavaScript
+- pricing/services
+- forms/contact behaviour
+
+Local preview:
+  ./serve-local.sh
+  open http://127.0.0.1:4000/
+
+GitHub staging after commit/push:
+  https://law17.github.io/ahotoso_website/
