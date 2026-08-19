@@ -91,3 +91,12 @@ Business contact details are centralised in `_config.yml` under `contact:`.
 - `whatsapp_message` controls the prefilled message used by WhatsApp links.
 
 After changing `_config.yml`, restart the local Jekyll server so the configuration is reloaded.
+
+## GitHub Pages deployment
+
+The repository includes a GitHub Actions workflow at `.github/workflows/pages.yml` for production deployment. Deployment and go-live instructions are in:
+
+- `docs/DEPLOYMENT.md`
+- `docs/GO-LIVE-CHECKLIST.md`
+
+The custom domain is intentionally **not** activated in the repository yet. Keep the site on its GitHub Pages URL until `ahotoso.com` is under the company's control and DNS/HTTPS are ready.

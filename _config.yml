@@ -19,6 +19,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - node_modules
+  - docs
 include:
   - _pages
 # Service-request delivery. Paste the unique Formspree form endpoint here after
