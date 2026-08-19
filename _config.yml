@@ -1,8 +1,8 @@
 title: "Ahotosoɔ"
 name: "Ahotosoɔ Services Ltd"
 description: "Your trusted presence in Ghana. Independent verification, property oversight, construction monitoring and local representation for people living abroad."
-url: "https://ahotoso.com"
-baseurl: ""
+url: "https://law17.github.io"  ## "https://ahotoso.com"
+baseurl: "/ahotoso_website"    ## ""
 locale: "en-GB"
 timezone: "Europe/London"
 markdown: kramdown
