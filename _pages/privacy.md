@@ -6,7 +6,7 @@ description: How Ahotosoɔ Services Ltd collects, uses, protects and manages per
 ---
 
 <section class="page-hero">
-  <div class="container container-narrow">
+  <div class="shell content-narrow">
     <p class="eyebrow">Privacy</p>
     <h1>Privacy Notice</h1>
     <p class="lead">How Ahotosoɔ Services Ltd collects, uses, shares and protects personal information when you use our website or services.</p>
@@ -15,7 +15,7 @@ description: How Ahotosoɔ Services Ltd collects, uses, protects and manages per
 </section>
 
 <section class="section">
-  <div class="container container-narrow prose">
+  <div class="shell content-narrow prose">
 
     <h2>1. Who we are</h2>
 
